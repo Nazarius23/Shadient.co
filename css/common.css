@@ -1,0 +1,184 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.6);
+	background: rgba(0, 0, 0);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: clip;
+}
+
+[class*='__container'] {
+	max-width: 83.125rem;
+	margin: 0 auto;
+	padding: 0 0.9375rem;
+}
+
+.page {
+	flex: 1 1 auto;
+}
+
+/* ?font-size: calc(10px + (50 - 10) * ((100vw - 320px) / (1330 - 320))); */
+
+/* ================================================================= */
+
+.header-block {
+}
+
+.header-block--inline {
+	display: grid;
+	grid-template-columns: minmax(350px, 500px) minmax(350px, 620px);
+	justify-content: space-between;
+	column-gap: 1.25rem;
+}
+
+.header-block--center {
+	display: grid;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 39.375rem;
+	row-gap: 0.625rem;
+}
+/* ---------------------------------------------------------------- */
+
+.header-block__lable {
+	color: rgb(255, 168, 0);
+	font-size: 24px; /* !calc */
+	line-height: 116.666667%;
+}
+
+/* ---------------------------------------------------------------- */
+
+.header-block__title {
+	font-size: 2.5rem; /* **calc */
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	line-height: 110%; /* 56/40 */
+}
+
+@media (max-width: 767.98px) {
+	.header-block__title {
+		font-size: calc(36px + (40 - 36) * ((100vw - 320px) / (767.98 - 320)));
+	}
+}
+/* ---------------------------------------------------------------- */
+
+.header-block__title--hero {
+	font-size: 96px; /* !calc */
+	font-weight: 700;
+	line-height: 83.333333%;
+	color: #fff;
+}
+
+.header-block__title--hero span {
+	background: var(--Gradient, linear-gradient(218deg, #9de8ee 25.05%, #9de8ee 25.05%, #fa7c0b 51.71%, #9f8ced 79.45%));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* ---------------------------------------------------------------- */
+
+.header-block__title--black {
+	color: rgb(13, 14, 20);
+}
+
+/* ---------------------------------------------------------------- */
+
+.header-block__title--medium {
+	font-size: #fff;
+	font-size: 64px; /* !calc */
+	font-weight: 700;
+	line-height: 100%;
+}
+@media (max-width: 767.98px) {
+	.header-block__title--medium {
+		font-size: calc(48px + (64 - 48) * ((100vw - 320px) / (767.98 - 320)));
+	}
+}
+
+/* ---------------------------------------------------------------- */
+
+.header-block__title--small {
+	color: rgb(255, 255, 255);
+	font-size: 32px; /* !calc */
+	line-height: 175%; /* 56/32 */
+}
+
+/* ---------------------------------------------------------------- */
+
+.header-block__text {
+}
+
+/* !Defalt-style================================================================= */
+.text {
+	line-height: 140%; /* 24/16 */
+	letter-spacing: 2%;
+	font-weight: 300;
+}
+.text--black {
+	color: rgba(0, 0, 0, 0.6);
+}
+.text--white {
+	color: rgb(255, 255, 255);
+}
+.button {
+	display: inline-flex;
+	align-self: start;
+	text-align: center;
+	border-radius: 1000px;
+	padding: 0.75rem 1.5625rem;
+	font-size: 0.875rem;
+	font-weight: 700;
+	line-height: 114.285714%; /* 16/14 */
+	text-transform: uppercase;
+	max-height: 2.5rem;
+}
+/* ----------------------------------------------------------------*/
+
+.button--transparent {
+	border: 0.0625rem solid rgb(255, 168, 0);
+	color: rgb(255, 168, 0);
+	background-color: transparent;
+	transition: background-color 0.4s ease-out, color 0.4s ease-out;
+}
+@media (min-width: 47.9988rem) {
+	.button--transparent:hover {
+		background-color: rgb(255, 168, 0);
+		color: white;
+	}
+}
+
+/* ----------------------------------------------------------------*/
+
+.button--orange {
+	color: #000;
+	background-color: rgb(255, 168, 0);
+	transition: all 0.4s ease-out;
+	border: 0.0625rem solid #000;
+}
+@media (min-width: 47.9988rem) {
+	.button--orange:hover {
+		background-color: transparent;
+		border: 0.0625rem solid rgb(255, 168, 0);
+		color: rgb(255, 168, 0);
+	}
+}
+/* ----------------------------------------------------------------*/
+
+.button--black {
+	color: rgb(255, 255, 255);
+	background-color: #000;
+	transition: background-color 0.4s ease-out, color 0.4s ease-out;
+}
+@media (min-width: 47.9988rem) {
+	.button--black:hover {
+		color: #000;
+		background-color: rgb(255, 255, 255);
+	}
+}
+/* ----------------------------------------------------------------*/

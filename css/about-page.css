@@ -1,0 +1,125 @@
+.about {
+	padding-top: 5.875rem;
+	position: relative;
+}
+.about__container {
+	position: relative;
+	z-index: 2;
+}
+.about__header-block {
+	padding-top: 6.25rem;
+	padding-bottom: 13rem;
+	max-width: 500px;
+}
+.header-block {
+}
+.about__header-block .header-block__lable:not(:last-child) {
+	margin-bottom: 16px;
+}
+.header-block__lable {
+	transform: translate(0, -100px);
+	opacity: 0;
+	transition: all 0.7s ease-out;
+}
+.header-block__lable._active {
+	transform: translate(0, 0);
+	opacity: 1;
+}
+.about__header-block .header-block__title:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.about__header-block .header-block__text:not(:last-child) {
+	margin-bottom: 32px;
+}
+
+.header-block__button {
+}
+
+.about__decor {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.about__decor img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+	.about__header-block .header-block__lable:not(:last-child) {
+		margin-bottom: calc(10px + (16 - 10) * ((100vw - 320px) / (767.98 - 320)));
+	}
+	.about__header-block .header-block__title:not(:last-child) {
+		margin-bottom: calc(10px + (16 - 10) * ((100vw - 320px) / (767.98 - 320)));
+	}
+
+	.about__header-block .header-block__text:not(:last-child) {
+		margin-bottom: calc(15px + (16 - 15) * ((100vw - 320px) / (767.98 - 320)));
+	}
+}
+
+/* ================================================================= */
+
+.info {
+	padding: 70px 0;
+	background-color: #110f0f;
+}
+.info__container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 70px;
+}
+
+.info__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+.info__list {
+	transform: translate(-30%, 0);
+	opacity: 0;
+	transition: all 0.7s ease-out;
+}
+.info__list._active {
+	transform: translate(0, 0);
+	opacity: 1;
+}
+
+.list-info {
+}
+.list-info__title {
+	color: rgb(255, 255, 255);
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 110.25%; /* 42/32 */
+}
+.list-info__text {
+	letter-spacing: 2%;
+	font-weight: 300;
+	line-height: 24/16;
+}
+.info__link {
+}
+.button {
+}
+.button--transparent {
+}
+@media (max-width: 767.98px) {
+	.info {
+		padding: calc(40px + (70 - 40) * ((100vw - 320px) / (767.98 - 320))) 0;
+	}
+	.info__container {
+		row-gap: calc(25px + (70 - 25) * ((100vw - 320px) / (767.98 - 320)));
+	}
+	.info__list {
+		row-gap: calc(10px + (20 - 10) * ((100vw - 320px) / (767.98 - 320)));
+	}
+}
